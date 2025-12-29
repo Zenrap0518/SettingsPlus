@@ -41,6 +41,8 @@ jobs:
         with:
           bindings: geode-sdk/bindings
           bindings-ref: main
+          cmake-args: >
+           -DCMAKE_POLICY_VERSION_MINIMUM=3.5
           combine: true
           export-symbols: true
           target: ${{ matrix.config.target }}
